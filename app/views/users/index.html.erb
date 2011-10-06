@@ -1,0 +1,6 @@
+<h3>Users</h3>
+<ul class="list">
+  <% @users.each do |u|%>
+    <li class="padded"><%= link_to "edit photos for user ##{u.id}", user_photos_path(u) %></li>
+  <% end %>
+</ul>

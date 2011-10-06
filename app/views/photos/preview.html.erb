@@ -1,5 +1,5 @@
 <h3>Preview</h3>
-<%= link_to 'edit', root_path %>
+<%= link_to 'home', root_path %> | <%= link_to 'edit', user_photos_path(@user) %>
 <ul class="matrix">
   <% @photos.each do |photo|%>
   <li><%= link_to image_tag(photo.preview_url, :alt => photo.title, :title => photo.title), photo.url %></li>

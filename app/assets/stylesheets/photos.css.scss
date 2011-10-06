@@ -1,9 +1,12 @@
 // Place all the styles related to the photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$cellSize: 150;
+$hCells: 5;
+
 ul.matrix {
   display: block;
-  width: 900px;
+  width: $hCells * $cellSize + px;
   padding: 0px;
   margin: 0px;
 }
@@ -12,6 +15,8 @@ ul.matrix {
   padding: 3px;
   margin: 0px;
   list-style: none;
+  width: $cellSize + px;
+  height: $cellSize + px;
 }
 
 ul.list {

@@ -1,5 +1,5 @@
 <h3>Edit</h3>
-<%= link_to 'preview', preview_photos_path %>
+<%= link_to 'home', root_path %> | <%= link_to 'preview', preview_user_photos_path(@user) %>
 <ul class="list">
   <span id="photos_container">
   <%= render :partial => 'photo', :collection => @photos %>
