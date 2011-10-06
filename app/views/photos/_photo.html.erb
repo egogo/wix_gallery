@@ -1,0 +1,20 @@
+<li id="photo_<%= (!photo.new_record?) ? photo.id : 'new' -%>">
+  <%= form_for photo, :remote => true do |f|%>
+    <fieldset>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </fieldset>
+    <fieldset>
+      <%= f.label :preview_url %>
+      <%= f.text_field :preview_url %>
+    </fieldset>
+    <fieldset>
+      <%= f.label :url %>
+      <%= f.text_field :url %>
+    </fieldset>
+    <fieldset class="controls">
+    <%= submit_tag 'Save' %>
+    <% if !photo.new_record? %> or <%= link_to 'Delete', photo, :remote => true, :method => :delete, :confirm => 'Sure about that?'  %><% end %>
+    </fieldset>
+  <% end %>
+</li>

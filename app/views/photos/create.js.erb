@@ -1,0 +1,7 @@
+<% if @photo.valid? %>
+$('#photos_container').append("<%= escape_javascript(render(:partial => @photo)) -%>");
+$('#photo_<%= @photo.id %>').effect("highlight", {}, 3000);
+$('#photo_new').replaceWith("<%= escape_javascript(render(:partial => Photo.new)) -%>");
+<% else %>
+$('#photo_new').replaceWith("<%= escape_javascript(render(:partial => @photo)) -%>");
+<% end %>

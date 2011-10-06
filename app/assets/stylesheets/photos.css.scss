@@ -1,0 +1,60 @@
+// Place all the styles related to the photos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+ul.matrix {
+  display: block;
+  width: 900px;
+  padding: 0px;
+  margin: 0px;
+}
+.matrix li {
+  float: left;
+  padding: 3px;
+  margin: 0px;
+  list-style: none;
+}
+
+ul.list {
+  
+}
+
+ul.list li {
+  list-style: none;
+  margin-bottom: 15px;
+  border: 1px solid gray;
+  width: 400px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+ul.list li fieldset {
+  width: 350px;
+  border: none;
+}
+
+ul.list li fieldset.controls {
+  text-align: right;
+}
+
+ul.list li fieldset label {
+  width: 24%;
+  display: inline-block;
+  text-align: right;
+  font-weight: bold;
+  border: none;
+}
+
+ul.list li fieldset input[type='text'] {
+  width: 70%;
+}
+
+ul.list li fieldset label, ul.list li fieldset input {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.list li fieldset span.error input {
+  border: 1px solid red;
+}
